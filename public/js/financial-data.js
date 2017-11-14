@@ -1,5 +1,8 @@
 function getCoinDeskInfo(startDate, endDate, currency) {
   axios
+    /* .get(
+      `http://api.coindesk.com/v1/bpi/historical/close.json?start=${startDate}&end=${endDate}&currency=${currency}`
+    ) */
     .get(
       `http://api.coindesk.com/v1/bpi/historical/close.json?start=${startDate}&end=${endDate}&currency=${currency}`
     )
